@@ -7,6 +7,7 @@ import Image from "./Image";
 import Info from "./info";
 import Laptop from "./Laptop";
 import LearnMap1 from "./LearnMap1";
+import LearnMap2 from "./LearnMap2";
 import TernaryOpt from "./TernaryOpt";
 
 const App = () => {
@@ -53,7 +54,10 @@ const App = () => {
     //   {/* <ButtonClick /> */}
     //   {/* <LearnMap1 /> */}
     // </div>
-    <div><LearnMap1></LearnMap1></div>
+    <div>
+      {/* <LearnMap1></LearnMap1> */}
+      <LearnMap2></LearnMap2>
+    </div>
   );
 };
 
