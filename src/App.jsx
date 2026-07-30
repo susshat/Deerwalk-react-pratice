@@ -9,6 +9,9 @@ import Laptop from "./Laptop";
 import LearnMap1 from "./LearnMap1";
 import LearnMap2 from "./LearnMap2";
 import TernaryOpt from "./TernaryOpt";
+import LearnUseStateHooks from "./useStateHooks/1LearnUseStateHooks";
+import LearnUseStateHooks2 from "./useStateHooks/2LearnUseStateHooks";
+import LearnUseState3 from "./useStateHooks/3LearnUseState";
 
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
@@ -56,7 +59,10 @@ const App = () => {
     // </div>
     <div>
       {/* <LearnMap1></LearnMap1> */}
-      <LearnMap2></LearnMap2>
+      {/* <LearnMap2></LearnMap2> */}
+      {/*        <LearnUseStateHooks /> */}
+      {/*    <LearnUseStateHooks2 /> */}
+      <LearnUseState3 />
     </div>
   );
 };
