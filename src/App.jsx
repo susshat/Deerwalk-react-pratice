@@ -11,8 +11,13 @@ import Info from "./info";
 import Laptop from "./Laptop";
 import LearnJson from "./LearnJson";
 import AddToLocalStorage from "./learnLocalSrorage/AddToLocalStorage";
+import GetLocalStorage from "./learnLocalSrorage/GetLocalStorage";
+import RemoveLocalStorage from "./learnLocalSrorage/RemoveLocalStorage";
 import LearnMap1 from "./LearnMap1";
 import LearnMap2 from "./LearnMap2";
+import AddDataToSessionStorage from "./learnSessionStorage/AddDataToSessionStorage";
+import GetSessionStorage from "./learnSessionStorage/GetSessionStorage";
+import RemoveSession from "./learnSessionStorage/RemoveSession";
 import TernaryOpt from "./TernaryOpt";
 import LearnUseStateHooks from "./useStateHooks/1LearnUseStateHooks";
 import LearnUseStateHooks2 from "./useStateHooks/2LearnUseStateHooks";
@@ -73,7 +78,12 @@ const App = () => {
       {/*       <LearnJson /> */}
       {/*      <DWNavLink></DWNavLink>
       <DWRoute></DWRoute> */}
-      <AddToLocalStorage></AddToLocalStorage>
+      {/*   <AddToLocalStorage></AddToLocalStorage>
+      <GetLocalStorage></GetLocalStorage>
+      <RemoveLocalStorage></RemoveLocalStorage> */}
+      <AddDataToSessionStorage></AddDataToSessionStorage>
+      <GetSessionStorage></GetSessionStorage>
+      <RemoveSession></RemoveSession>
     </>
   );
 };
