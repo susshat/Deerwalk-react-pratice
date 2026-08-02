@@ -4,7 +4,7 @@ import { IoEyeOff } from "react-icons/io5";
 
 const LearnUseState3 = () => {
   let [show, setShow] = useState("password");
-
+  console.log("hook 3");
   return (
     <>
       <input type={show}></input>
@@ -34,5 +34,3 @@ const LearnUseState3 = () => {
 };
 
 export default LearnUseState3;
-
-

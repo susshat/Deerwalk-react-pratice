@@ -1,17 +1,23 @@
+import AboutPage from "./AboutPage";
 import Address from "./Address";
 import ButtonClick from "./ButtonClick";
 import College from "./College";
+import DWNavLink from "./DWNavLink";
+import DWRoute from "./DWRoute";
 import EffectOfData from "./EffectOfData";
 import FatherDetails from "./FatherDetails";
 import Image from "./Image";
 import Info from "./info";
 import Laptop from "./Laptop";
+import LearnJson from "./LearnJson";
+import AddToLocalStorage from "./learnLocalSrorage/AddToLocalStorage";
 import LearnMap1 from "./LearnMap1";
 import LearnMap2 from "./LearnMap2";
 import TernaryOpt from "./TernaryOpt";
 import LearnUseStateHooks from "./useStateHooks/1LearnUseStateHooks";
 import LearnUseStateHooks2 from "./useStateHooks/2LearnUseStateHooks";
 import LearnUseState3 from "./useStateHooks/3LearnUseState";
+import LearnUseStateHooks4 from "./useStateHooks/4LearnUseStateHooks";
 
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
@@ -57,13 +63,18 @@ const App = () => {
     //   {/* <ButtonClick /> */}
     //   {/* <LearnMap1 /> */}
     // </div>
-    <div>
+    <>
       {/* <LearnMap1></LearnMap1> */}
       {/* <LearnMap2></LearnMap2> */}
       {/*        <LearnUseStateHooks /> */}
       {/*    <LearnUseStateHooks2 /> */}
-      <LearnUseState3 />
-    </div>
+      {/*   <LearnUseState3 />
+      <LearnUseStateHooks4 /> */}
+      {/*       <LearnJson /> */}
+      {/*      <DWNavLink></DWNavLink>
+      <DWRoute></DWRoute> */}
+      <AddToLocalStorage></AddToLocalStorage>
+    </>
   );
 };
 
