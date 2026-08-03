@@ -1,3 +1,4 @@
+import { Form } from "react-router-dom";
 import AboutPage from "./AboutPage";
 import Address from "./Address";
 import ButtonClick from "./ButtonClick";
@@ -24,6 +25,7 @@ import LearnUseStateHooks from "./useStateHooks/1LearnUseStateHooks";
 import LearnUseStateHooks2 from "./useStateHooks/2LearnUseStateHooks";
 import LearnUseState3 from "./useStateHooks/3LearnUseState";
 import LearnUseStateHooks4 from "./useStateHooks/4LearnUseStateHooks";
+import Form1 from "./learnForm/Form1";
 
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
@@ -77,7 +79,7 @@ const App = () => {
       {/*   <LearnUseState3 />
       <LearnUseStateHooks4 /> */}
       {/*       <LearnJson /> */}
-      {/*      <DWNavLink></DWNavLink>
+      {/*  <DWNavLink></DWNavLink>
       <DWRoute></DWRoute> */}
       {/*   <AddToLocalStorage></AddToLocalStorage>
       <GetLocalStorage></GetLocalStorage>
@@ -85,7 +87,8 @@ const App = () => {
       {/*    <AddDataToSessionStorage></AddDataToSessionStorage>
       <GetSessionStorage></GetSessionStorage>
       <RemoveSession></RemoveSession> */}
-      <LearnJsonStrParse></LearnJsonStrParse>
+      {/*       <LearnJsonStrParse></LearnJsonStrParse> */}
+      <Form1></Form1>
     </>
   );
 };
