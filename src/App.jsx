@@ -9,7 +9,8 @@ import FatherDetails from "./FatherDetails";
 import Image from "./Image";
 import Info from "./info";
 import Laptop from "./Laptop";
-import LearnJson from "./LearnJson";
+import LearnJson from "./learnJSONParseStringify/LearnJson";
+import LearnJsonStrParse from "./learnJSONParseStringify/LearnJsonParse";
 import AddToLocalStorage from "./learnLocalSrorage/AddToLocalStorage";
 import GetLocalStorage from "./learnLocalSrorage/GetLocalStorage";
 import RemoveLocalStorage from "./learnLocalSrorage/RemoveLocalStorage";
@@ -81,9 +82,10 @@ const App = () => {
       {/*   <AddToLocalStorage></AddToLocalStorage>
       <GetLocalStorage></GetLocalStorage>
       <RemoveLocalStorage></RemoveLocalStorage> */}
-      <AddDataToSessionStorage></AddDataToSessionStorage>
+      {/*    <AddDataToSessionStorage></AddDataToSessionStorage>
       <GetSessionStorage></GetSessionStorage>
-      <RemoveSession></RemoveSession>
+      <RemoveSession></RemoveSession> */}
+      <LearnJsonStrParse></LearnJsonStrParse>
     </>
   );
 };
