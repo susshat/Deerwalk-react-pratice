@@ -15,8 +15,8 @@ import LearnJsonStrParse from "./learnJSONParseStringify/LearnJsonParse";
 import AddToLocalStorage from "./learnLocalSrorage/AddToLocalStorage";
 import GetLocalStorage from "./learnLocalSrorage/GetLocalStorage";
 import RemoveLocalStorage from "./learnLocalSrorage/RemoveLocalStorage";
-import LearnMap1 from "./LearnMap1";
-import LearnMap2 from "./LearnMap2";
+import LearnMap1 from "./learnForm/LearnMap1";
+import LearnMap2 from "./learnForm/LearnMap2";
 import AddDataToSessionStorage from "./learnSessionStorage/AddDataToSessionStorage";
 import GetSessionStorage from "./learnSessionStorage/GetSessionStorage";
 import RemoveSession from "./learnSessionStorage/RemoveSession";
@@ -25,7 +25,10 @@ import LearnUseStateHooks from "./useStateHooks/1LearnUseStateHooks";
 import LearnUseStateHooks2 from "./useStateHooks/2LearnUseStateHooks";
 import LearnUseState3 from "./useStateHooks/3LearnUseState";
 import LearnUseStateHooks4 from "./useStateHooks/4LearnUseStateHooks";
-import Form1 from "./learnForm/Form1";
+import Form1 from "./Form1";
+import UseReducer1 from "./learnUseReducer/UseReducer1";
+import UseReducere2 from "./learnUseReducer/UseReducere2";
+import UseReducer3 from "./learnUseReducer/UseReducer3";
 
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
@@ -88,7 +91,10 @@ const App = () => {
       <GetSessionStorage></GetSessionStorage>
       <RemoveSession></RemoveSession> */}
       {/*       <LearnJsonStrParse></LearnJsonStrParse> */}
-      <Form1></Form1>
+      {/*     <Form1></Form1> */}
+      {/*  <UseReducer1></UseReducer1> */}
+      {/*   <UseReducere2></UseReducere2> */}
+      <UseReducer3></UseReducer3>
     </>
   );
 };
