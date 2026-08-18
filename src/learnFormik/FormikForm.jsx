@@ -1,6 +1,11 @@
 import { Field, Form, Formik } from "formik";
 import React from "react";
 import * as yup from "yup";
+import FormikInput from "./FormikInput";
+import FormikTextArea from "./FormikTextArea";
+import FormikSelect from "./FormikSelect";
+import FormikRadio from "./FormikRadio";
+import FormikCheckbox from "./FormikCheckbox";
 
 const FormikForm = () => {
   const initialValues = { firstName: "", lastName: "", description: "" };
@@ -12,6 +17,18 @@ const FormikForm = () => {
     lastName: yup.string().required("Email is required"),
     description: yup.string().required("Password is required"),
   });
+  const countryOptions = [
+    { label: "Nepal", value: "nepal" },
+    { label: "India", value: "india" },
+    { label: "China", value: "china" },
+    { label: "Usa", value: "usa" },
+    { label: "Norway", value: "norway" },
+  ];
+  const genderOptions = [
+    { label: "Male", value: "male" },
+    { label: "Female", value: "female" },
+    { label: "Other", value: "other" },
+  ];
   return (
     <>
       <Formik
@@ -22,77 +39,56 @@ const FormikForm = () => {
         {(formik) => {
           return (
             <Form>
-              <Field name="firstName">
-                {({ field, form, meta }) => {
-                  return (
-                    <div>
-                      <label htmlFor="firstName">First Name</label>
-                      <input
-                        {...field}
-                        type="text"
-                        value={meta.value}
-                        /* if we only need to add one particular value we use "field.OnChange"
-                        bue if multiple fields are required to be changed at once we use function inside the 
-                        onChange  like below:
-                            onChange={(e) => {
-                            formik.setFieldValue("firstName", e.target.value);
-                            }} */
-                        onChange={field.onChange}
-                      />
-                      {/* validaion will run only if
-                      1. onChange is triggered
-                      2. onBlur(touched) is triggred
-                      3. onSubmit is triggred */}
-                      {meta.error && meta.touched ? (
-                        <div style={{ color: "red" }}>{meta.error}</div>
-                      ) : null}
-                    </div>
-                  );
+              <FormikInput
+                name="firstName"
+                label="First Name"
+                required={true}
+                type="text"
+                onChange={(e) => {
+                  formik.setFieldValue("firstName", e.target.value);
                 }}
-              </Field>
-              <Field name="lastName">
-                {({ field, form, meta }) => {
-                  return (
-                    <div>
-                      <label htmlFor="lastName">Last Name</label>
-                      <input
-                        {...field}
-                        type="text"
-                        value={meta.value}
-                        onChange={field.onChange}
-
-                        /*     onChange={(e) => {
-                          formik.setFieldValue("lastName", e.target.value);
-                        }} */
-                      />
-                      {meta.error && meta.touched ? (
-                        <div style={{ color: "red" }}>{meta.error}</div>
-                      ) : null}
-                    </div>
-                  );
+              ></FormikInput>
+              <FormikInput
+                name="lastName"
+                label="Last Name"
+                required={true}
+                type="text"
+                style={{ backgroundColor: "grey", color: "white" }}
+              ></FormikInput>
+              <FormikTextArea
+                name="description"
+                label="Description"
+                required={false}
+                type="text"
+                placeholder="write something.."
+              ></FormikTextArea>
+              <FormikSelect
+                name="country"
+                style={{ backgroundColor: "olive", color: "white" }}
+                label="Country"
+                required={true}
+                onChange={(e) => {
+                  formik.setFieldValue("country", e.target.value);
                 }}
-              </Field>
-              <Field name="description">
-                {({ field, form, meta }) => {
-                  return (
-                    <div>
-                      <label htmlFor="description">Description</label>
-                      <input
-                        {...field}
-                        type="text"
-                        value={meta.value}
-                        onChange={field.onChange}
-                        /*  onChange={(e) => {
-                          formik.setFieldValue("description", e.target.value);
-                        }} */
-                      />
-                      {meta.error && meta.touched ? (
-                        <div style={{ color: "red" }}>{meta.error}</div>
-                      ) : null}
-                    </div>
-                  );
+                options={countryOptions}
+              ></FormikSelect>
+              <FormikRadio
+                name="gender"
+                label="Gender"
+                required={true}
+                options={genderOptions}
+                onChange={(e) => {
+                  formik.setFieldValue("gender", e.target.value);
                 }}
-              </Field>
+              ></FormikRadio>
+              <FormikCheckbox
+                required={true}
+                name="isMarried"
+                label="Is Married"
+                onChange={(e) => {
+                  formik.setFieldValue("isMarried", e.target.checked);
+                }}
+              ></FormikCheckbox>
 
               <button type="submit">Submit</button>
             </Form>
