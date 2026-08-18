@@ -1,34 +1,8 @@
-import { Form } from "react-router-dom";
-import AboutPage from "./AboutPage";
-import Address from "./Address";
-import ButtonClick from "./ButtonClick";
-import College from "./College";
-import DWNavLink from "./DWNavLink";
-import DWRoute from "./DWRoute";
-import EffectOfData from "./EffectOfData";
-import FatherDetails from "./FatherDetails";
-import Image from "./Image";
-import Info from "./info";
-import Laptop from "./Laptop";
-import LearnJson from "./learnJSONParseStringify/LearnJson";
-import LearnJsonStrParse from "./learnJSONParseStringify/LearnJsonParse";
-import AddToLocalStorage from "./learnLocalSrorage/AddToLocalStorage";
-import GetLocalStorage from "./learnLocalSrorage/GetLocalStorage";
-import RemoveLocalStorage from "./learnLocalSrorage/RemoveLocalStorage";
-import LearnMap1 from "./learnForm/LearnMap1";
-import LearnMap2 from "./learnForm/LearnMap2";
-import AddDataToSessionStorage from "./learnSessionStorage/AddDataToSessionStorage";
-import GetSessionStorage from "./learnSessionStorage/GetSessionStorage";
-import RemoveSession from "./learnSessionStorage/RemoveSession";
-import TernaryOpt from "./TernaryOpt";
-import LearnUseStateHooks from "./useStateHooks/1LearnUseStateHooks";
-import LearnUseStateHooks2 from "./useStateHooks/2LearnUseStateHooks";
-import LearnUseState3 from "./useStateHooks/3LearnUseState";
-import LearnUseStateHooks4 from "./useStateHooks/4LearnUseStateHooks";
-import Form1 from "./Form1";
-import UseReducer1 from "./learnUseReducer/UseReducer1";
-import UseReducere2 from "./learnUseReducer/UseReducere2";
-import UseReducer3 from "./learnUseReducer/UseReducer3";
+import Property from "./exercise/Property";
+import Form3 from "./learnForm/Form3";
+import Form4 from "./learnForm/Form4";
+import FormwithUseReducer from "./learnForm/FormwithUseReducer";
+import FormikForm from "./learnFormik/FormikForm";
 
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
@@ -94,7 +68,14 @@ const App = () => {
       {/*     <Form1></Form1> */}
       {/*  <UseReducer1></UseReducer1> */}
       {/*   <UseReducere2></UseReducere2> */}
-      <UseReducer3></UseReducer3>
+      {/* <UseReducer3></UseReducer3> */}
+      {/*   <Form1></Form1> */}
+      {/* <Form2></Form2> */}
+      {/* <FormwithUseReducer></FormwithUseReducer> */}
+      {/*    <Form3></Form3>
+      <Form4></Form4> */}
+      {/*   <Property></Property> */}
+      <FormikForm></FormikForm>
     </>
   );
 };
