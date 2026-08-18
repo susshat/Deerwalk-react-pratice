@@ -1,7 +1,3 @@
-import Property from "./exercise/Property";
-import Form3 from "./learnForm/Form3";
-import Form4 from "./learnForm/Form4";
-import FormwithUseReducer from "./learnForm/FormwithUseReducer";
 import FormikForm from "./learnFormik/FormikForm";
 
 const App = () => {
@@ -49,8 +45,8 @@ const App = () => {
     //   {/* <LearnMap1 /> */}
     // </div>
     <>
-      {/* <LearnMap1></LearnMap1> */}
-      {/* <LearnMap2></LearnMap2> */}
+      {/*  <LearnMap1></LearnMap1>
+      <LearnMap2></LearnMap2> */}
       {/*        <LearnUseStateHooks /> */}
       {/*    <LearnUseStateHooks2 /> */}
       {/*   <LearnUseState3 />
@@ -65,16 +61,10 @@ const App = () => {
       <GetSessionStorage></GetSessionStorage>
       <RemoveSession></RemoveSession> */}
       {/*       <LearnJsonStrParse></LearnJsonStrParse> */}
-      {/*     <Form1></Form1> */}
+      {/*    <Form1></Form1>  */}
       {/*  <UseReducer1></UseReducer1> */}
       {/*   <UseReducere2></UseReducere2> */}
-      {/* <UseReducer3></UseReducer3> */}
-      {/*   <Form1></Form1> */}
-      {/* <Form2></Form2> */}
-      {/* <FormwithUseReducer></FormwithUseReducer> */}
-      {/*    <Form3></Form3>
-      <Form4></Form4> */}
-      {/*   <Property></Property> */}
+      {/*   <UseReducer3></UseReducer3> */}
       <FormikForm></FormikForm>
     </>
   );
