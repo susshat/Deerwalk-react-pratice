@@ -1,11 +1,16 @@
+import { createContext, useState } from "react";
 import FormikForm from "./learnFormik/FormikForm";
 import FormikPratice from "./learnFormik/FormikPratice";
+import Child from "./learnPropDrilling/ChildA";
+import GrandChild from "./learnPropDrilling/ChildB";
+import Parent from "./learnPropDrilling/Parent";
+import LearnUseRef1 from "./learnUseRef/LearnUseRef1";
 
+export const Context1 = createContext();
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
 
-  let name = "suntali";
-  let surname = "pokie";
+  const [name, setName] = useState("suntali");
   return (
     // <div>
     //   <h1>Dayum gurl</h1>
@@ -67,7 +72,11 @@ const App = () => {
       {/*   <UseReducere2></UseReducere2> */}
       {/*   <UseReducer3></UseReducer3> */}
       {/* <FormikForm></FormikForm> */}
-        <FormikPratice></FormikPratice>
+      {/*  <FormikPratice></FormikPratice> */}
+      {/*  <LearnUseRef1></LearnUseRef1> */}
+      <Context1.Provider value={{ name: name, setName: setName }}>
+        <Parent></Parent>
+      </Context1.Provider>
     </>
   );
 };
