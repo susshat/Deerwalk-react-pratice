@@ -1,4 +1,5 @@
 import FormikForm from "./learnFormik/FormikForm";
+import FormikPratice from "./learnFormik/FormikPratice";
 
 const App = () => {
   // console.log("lets learn react"); in case of react the clg prints in the browser
@@ -65,7 +66,8 @@ const App = () => {
       {/*  <UseReducer1></UseReducer1> */}
       {/*   <UseReducere2></UseReducere2> */}
       {/*   <UseReducer3></UseReducer3> */}
-      <FormikForm></FormikForm>
+      {/* <FormikForm></FormikForm> */}
+        <FormikPratice></FormikPratice>
     </>
   );
 };
